@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Sight - Dessert Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🍰 Sweet Sight</h1>
+        <p class="tagline">A delightful dessert gallery for your eyes and taste buds</p>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h2>Filter by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="cakes">Cakes</button>
+                <button class="filter-btn" data-category="cookies">Cookies</button>
+                <button class="filter-btn" data-category="pastries">Pastries</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="dessert-card" data-category="cakes">
+                <div class="dessert-image">🎂</div>
+                <h3>Chocolate Cake</h3>
+                <p>Rich, moist chocolate cake with creamy frosting</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="dessert-card" data-category="cookies">
+                <div class="dessert-image">🍪</div>
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Classic homemade cookies with gooey chocolate chips</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="dessert-card" data-category="pastries">
+                <div class="dessert-image">🥐</div>
+                <h3>French Croissant</h3>
+                <p>Buttery, flaky pastry perfect for breakfast</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="dessert-card" data-category="cakes">
+                <div class="dessert-image">🍓</div>
+                <h3>Strawberry Shortcake</h3>
+                <p>Light sponge cake with fresh strawberries and cream</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="dessert-card" data-category="cookies">
+                <div class="dessert-image">🍩</div>
+                <h3>Glazed Donut</h3>
+                <p>Sweet and fluffy donut with a sugary glaze</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="dessert-card" data-category="pastries">
+                <div class="dessert-image">🥧</div>
+                <h3>Apple Pie</h3>
+                <p>Traditional apple pie with cinnamon and sugar</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </section>
+
+        <section class="add-dessert-section">
+            <h2>Add Your Favorite Dessert</h2>
+            <form id="dessert-form">
+                <div class="form-group">
+                    <label for="dessert-name">Dessert Name:</label>
+                    <input type="text" id="dessert-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dessert-description">Description:</label>
+                    <textarea id="dessert-description" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dessert-category">Category:</label>
+                    <select id="dessert-category" required>
+                        <option value="">Select a category</option>
+                        <option value="cakes">Cakes</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="pastries">Pastries</option>
+                    </select>
+                </div>
+                <button type="submit">Add Dessert</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sweet Sight - Bringing joy through desserts</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
